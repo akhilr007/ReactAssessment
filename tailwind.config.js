@@ -4,7 +4,7 @@ export default {
     theme: {
         extend: {},
         fontFamily: {
-            body: ["Apercu Pro"]
+            sans: ["Apercu Pro"]
         }
     },
     plugins: []
