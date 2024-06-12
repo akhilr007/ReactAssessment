@@ -1,10 +1,15 @@
 const Header = ({ color }) => {
     const data = ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"];
+    console.log(`bg-[${color}]`);
     return data.map((item, index) => {
         return (
             <div
                 key={index}
-                className={`w-[244px] h-[19px] items-center justify-center bg-[${color}] bg-opacity-10`}
+                style={{
+                    backgroundColor: color,
+                    opacity: "10%"
+                }}
+                className="w-[244px] h-[19px] items-center justify-center"
             >
                 <span
                     className={`text-[14px] leading-[17px] mx-auto border-r px-[4.5px] border-white py-[4.5px]`}
@@ -33,7 +38,8 @@ const Column = ({ color }) => {
         return (
             <div
                 key={index}
-                className={`w-[244px] h-[138px]  items-center justify-center bg-[${color}] bg-opacity-10 border-r border-white px-[4.5px]`}
+                className="w-[244px] h-[138px]  items-center justify-center border-r border-white px-[4.5px]"
+                style={{ backgroundColor: color, opacity: "10%" }}
             ></div>
         );
     });
@@ -45,6 +51,7 @@ const TableColumn = () => {
             <Column color="#6C63FF" />
             <Column color="#74A700" />
             <Column color="#FA9D17" />
+            {/* 74A700 */}
             <div className="w-[150px] h-[18px] absolute mt-[11.5px]">
                 <Graph width="150px" height="18px" tag="Utkarsh FD 1" />
             </div>
@@ -61,7 +68,8 @@ const TableColumn = () => {
     );
 };
 
-const Graph = ({ width, height, tag, mt }) => (
+// eslint-disable-next-line react/prop-types
+const Graph = ({ width, height, tag }) => (
     <div
         className={`absolute w-[${width}] h-[${height}] bg-[#3B39D9]  rounded-[8px]`}
     >
