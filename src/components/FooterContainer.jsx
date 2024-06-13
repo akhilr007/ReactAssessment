@@ -2,7 +2,7 @@ import InfoCard from "./InfoCard";
 
 const FooterContainer = () => {
     return (
-        <div className="w-[822px] h-[273px] ml-[60px] mt-[26px]">
+        <div className="w-[822px] h-[273px]">
             <h3 className="w-[496px] h-[32px] text-left text-[24px] font-medium leading-[30px] text-[#1A1B1E]">
                 Get Answer
             </h3>

@@ -13,6 +13,42 @@ const DateCard = () => (
     </div>
 );
 
+const PaymentInfoDataCard = ({ name, data }) => (
+    <div className="w-auto h-[16px]">
+        <h5 className="w-auto text-[14px] text-left leading-[17px] text-[#1A1B1E] text-opacity-60">
+            {name}
+        </h5>
+        <h4 className="text-[14px] leading-[17px] text-left text-[#1A1B1E] font-bold">
+            {data}
+        </h4>
+    </div>
+);
+
+const PaymentInfoCard = () => (
+    <div className="w-[257px] h-[40px] ml-[23px] mt-[17px]">
+        <div className="flex gap-[16px]">
+            <PaymentInfoDataCard name="Deposit Amt" data="Rs. 20,000" />
+            <PaymentInfoDataCard name="Tenure" data="2 years" />
+            <PaymentInfoDataCard name="Interest Rate" data="9.10%" />
+        </div>
+    </div>
+);
+
+const PaymentInfoButtonCard = () => (
+    <div className="flex gap-[12px]">
+        <div className="w-[170px] h-[42px] rounded-[5px] bg-[#3B39D9] shadow-[#0000000D] mt-[20px]">
+            <h4 className="text-white text-[16px] leading-[20px] text-center w-auto h-[19px] pt-[11.5px]">
+                Complete Now
+            </h4>
+        </div>
+        <div className="w-[170px] h-[42px] rounded-[5px] bg-white shadow-[#0000000D] mt-[20px] border border-[#3B39D9]">
+            <h4 className="text-[#3B39D9] text-[16px] leading-[20px] text-center w-auto h-[19px] pt-[11.5px]">
+                Reschedule
+            </h4>
+        </div>
+    </div>
+);
+
 const PaymentCard = () => {
     return (
         <div className="w-[352px] h-[183px]">
@@ -28,7 +64,11 @@ const PaymentCard = () => {
                         Utkarsh SF Bank FD Plan 2
                     </h4>
                 </div>
-                <DateCard />
+                <div className="flex">
+                    <DateCard />
+                    <PaymentInfoCard />
+                </div>
+                <PaymentInfoButtonCard />
             </div>
         </div>
     );
