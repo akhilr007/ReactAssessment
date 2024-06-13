@@ -33,8 +33,8 @@ const CompanyMid = ({ checkLogo, width, boxColor, info }) => (
 
 const CompanyFoot = ({ percentage, buttonColor }) => (
     <>
-        <div className="ml-[25px] mt-[20px] h-[16px]">
-            <h5 className="text-[14px] leading-[17px] text-left text-opacity-60 text-[#1A1B1E] font-medium">
+        <div className="ml-[25px] mt-[20px] h-[40px] w-[90px]">
+            <h5 className="w-auto text-[14px] leading-[17px] text-left text-opacity-60 text-[#1A1B1E] font-medium">
                 Interest Upto
             </h5>
             <h5 className="text-[14px] mt-[8px] leading-[17px] text-left text-opacity-100 text-[#1A1B1E] font-bold">
