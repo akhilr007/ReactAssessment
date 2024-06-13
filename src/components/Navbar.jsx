@@ -1,3 +1,5 @@
+import NavbarPopup from "./NavbarPopup";
+
 const Navbar = () => {
     return (
         <header className="flex justify-between text-lg font-medium text-black  h-[85px] border border-[#F7F8FA]">
@@ -40,6 +42,8 @@ const Navbar = () => {
                     </svg>
                 </div>
             </nav>
+
+            <NavbarPopup />
         </header>
     );
 };
