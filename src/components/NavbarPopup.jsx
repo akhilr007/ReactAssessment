@@ -1,6 +1,11 @@
-const NavbarPopup = () => {
+const NavbarPopup = ({ visible, onClose }) => {
     return (
-        <div className="absolute ml-[1068px] mt-[24px] w-[238px] h-[274px] z-30">
+        <div
+            className={`absolute ml-[1068px] mt-[24px] w-[238px] h-[274px] z-30 ${
+                visible ? "" : "hidden"
+            }`}
+            onClick={onClose}
+        >
             <div className="w-[238px] h-[226px] mt-[48px] pl-[15px] pt-[27px] bg-white">
                 <div className="flex items-baseline">
                     <svg

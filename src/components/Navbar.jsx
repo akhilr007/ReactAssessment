@@ -1,6 +1,13 @@
+import { useState } from "react";
 import NavbarPopup from "./NavbarPopup";
 
 const Navbar = () => {
+    const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+    const togglePopup = () => {
+        setIsPopupVisible(!isPopupVisible);
+    };
+
     return (
         <header className="flex justify-between text-lg font-medium text-black  h-[85px] border border-[#F7F8FA]">
             <img
@@ -13,7 +20,10 @@ const Navbar = () => {
                 <a className="mt-[36px] mr-[45px] leading-[17px]">Dashboard</a>
                 <a className="mt-[36px] mr-[45px] leading-[17px]">FAQs</a>
                 <a className="mt-[36px] mr-[58px] leading-[17px]">Support</a>
-                <div className="flex justify-center items-center mt-[24px] mr-[60px] mb-[29px] bg-white rounded-3xl border border-indigo-600 border-solid h-[42px] w-[71px]">
+                <div
+                    className="flex justify-center items-center mt-[24px] mr-[60px] mb-[29px] bg-white rounded-3xl border border-indigo-600 border-solid h-[42px] w-[71px] cursor-pointer"
+                    onClick={togglePopup}
+                >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="#4A4ED4"
@@ -43,7 +53,7 @@ const Navbar = () => {
                 </div>
             </nav>
 
-            <NavbarPopup />
+            <NavbarPopup visible={isPopupVisible} onClose={togglePopup} />
         </header>
     );
 };
