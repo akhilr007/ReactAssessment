@@ -1,6 +1,7 @@
 import CompanyCard from "./CompanyCard";
 import FDPortfolio from "./FDPortfolio";
 import FooterContainer from "./FooterContainer";
+import PaymentCard from "./PaymentCard";
 import Timeline from "./TimelineContainer";
 import Welcome from "./Welcome";
 
@@ -69,6 +70,9 @@ const Body = () => {
                 />
             </div>
             <FooterContainer />
+            <div className="absolute ml-[908px] mt-[-474px]">
+                <PaymentCard />
+            </div>
         </div>
     );
 };
