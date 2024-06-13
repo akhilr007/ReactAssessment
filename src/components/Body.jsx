@@ -1,11 +1,12 @@
 import CompanyCard from "./CompanyCard";
 import FDPortfolio from "./FDPortfolio";
+import FooterContainer from "./FooterContainer";
 import Timeline from "./TimelineContainer";
 import Welcome from "./Welcome";
 
 const Body = () => {
     return (
-        <div className="w-[1366px] h-[1157px] border border-black bg-[#F7F8FA]">
+        <div className="w-[1366px] h-[1180px] border border-black bg-[#F7F8FA]">
             <Welcome />
             <div className="flex">
                 <FDPortfolio />
@@ -67,6 +68,7 @@ const Body = () => {
                     containerColor="rgba(255, 239, 239, 1)"
                 />
             </div>
+            <FooterContainer />
         </div>
     );
 };
