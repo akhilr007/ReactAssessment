@@ -7,7 +7,7 @@ import Welcome from "./Welcome";
 
 const Body = () => {
     return (
-        <div className="w-[1366px] h-[1180px] border border-black bg-[#F7F8FA]">
+        <div className="w-[1366px] h-[1180px] border border-[#F7F8FA] bg-[#F7F8FA]">
             <Welcome />
             <div className="flex">
                 <FDPortfolio />
@@ -72,7 +72,7 @@ const Body = () => {
                     <FooterContainer />
                 </div>
                 <div className="w-[398px] mt-[26px] ml-[26px]">
-                    <PaymentContainer className="h-full" />
+                    <PaymentContainer />
                 </div>
             </div>
         </div>

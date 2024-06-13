@@ -1,6 +1,6 @@
 const Navbar = () => {
     return (
-        <header className="flex justify-between text-lg font-medium text-black  h-[85px] border border-gray-700">
+        <header className="flex justify-between text-lg font-medium text-black  h-[85px] border border-[#F7F8FA]">
             <img
                 loading="lazy"
                 src="src/assets/navbar-logo.png"
