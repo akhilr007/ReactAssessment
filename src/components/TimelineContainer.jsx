@@ -1,19 +1,23 @@
 const Header = ({ color }) => {
     const data = ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"];
-    console.log(`bg-[${color}]`);
+    const bgColorWithOpacity = `rgba(${parseInt(
+        color.slice(1, 3),
+        16
+    )}, ${parseInt(color.slice(3, 5), 16)}, ${parseInt(
+        color.slice(5, 7),
+        16
+    )}, 0.1)`;
+
     return data.map((item, index) => {
         return (
             <div
                 key={index}
                 style={{
-                    backgroundColor: color,
-                    opacity: "10%"
+                    backgroundColor: bgColorWithOpacity
                 }}
-                className="w-[244px] h-[19px] items-center justify-center"
+                className="w-[244px] h-[19px] flex items-center justify-center"
             >
-                <span
-                    className={`text-[14px] leading-[17px] mx-auto border-r px-[4.5px] border-white py-[4.5px]`}
-                >
+                <span className="text-[14px] leading-[17px] border-r px-[4.5px] border-white py-[4.5px]">
                     {item}
                 </span>
             </div>
