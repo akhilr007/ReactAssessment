@@ -12,7 +12,7 @@ const Navbar = () => {
         <header className="flex justify-between text-lg font-medium text-black  h-[85px] border border-[#F7F8FA]">
             <img
                 loading="lazy"
-                src="src/assets/navbar-logo.png"
+                src="assets/navbar-logo.png"
                 alt="Dashboard Logo"
                 className="shrink-0 h-[48px] w-[50px] mt-[18px] ml-[60px] "
             />

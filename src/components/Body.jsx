@@ -18,8 +18,8 @@ const Body = () => {
                 <div className="grid grid-cols-2 gap-[26px] mt-[26px] ml-[60px] w-[822px]">
                     <CompanyCard
                         name="Utkarsh Small Finance Bank"
-                        logo="src/assets/utkarsh-logo.png"
-                        checkLogo="src/assets/check.png"
+                        logo="assets/utkarsh-logo.png"
+                        checkLogo="assets/check.png"
                         boxColor="rgba(239, 221, 255, 1)"
                         buttonColor="rgba(82, 11, 141, 1)"
                         leftInfo="Highest Interest Rate"
@@ -31,8 +31,8 @@ const Body = () => {
                     />
                     <CompanyCard
                         name="Bajaj Finserv"
-                        logo="src/assets/bajaj-logo.png"
-                        checkLogo="src/assets/bajaj-check.png"
+                        logo="assets/bajaj-logo.png"
+                        checkLogo="assets/bajaj-check.png"
                         boxColor="rgba(0, 114, 187, 0.1)"
                         buttonColor="rgba(0, 114, 187, 1)"
                         leftInfo="Crisil AAA Rated"
@@ -44,8 +44,8 @@ const Body = () => {
                     />
                     <CompanyCard
                         name="Shriram Finance"
-                        logo="src/assets/shriram-logo.png"
-                        checkLogo="src/assets/shriram-check.png"
+                        logo="assets/shriram-logo.png"
+                        checkLogo="assets/shriram-check.png"
                         boxColor="rgba(26, 27, 30, 0.1)"
                         buttonColor="rgba(1, 1, 1, 1)"
                         leftInfo="Crisil AAA Rated"
@@ -57,8 +57,8 @@ const Body = () => {
                     />
                     <CompanyCard
                         name="Mahindra Finance"
-                        logo="src/assets/mahindra-logo.png"
-                        checkLogo="src/assets/mahindra-check.png"
+                        logo="assets/mahindra-logo.png"
+                        checkLogo="assets/mahindra-check.png"
                         boxColor="rgba(255, 0, 0, 0.1)"
                         buttonColor="rgba(255, 0, 0, 1)"
                         leftInfo="Crisil AAA Rated"
