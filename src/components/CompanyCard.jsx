@@ -69,7 +69,7 @@ const CompanyCard = ({
     return (
         <div
             style={{ backgroundColor: containerColor }}
-            className="w-[398px] h-[202px] rounded-[5px] shadow-[10px] border border-white"
+            className="w-[398px] h-[202px] rounded-[5px] shadow-[10px] border-[4px] border-white"
         >
             <CompanyHeader logo={`${logo}`} name={`${name}`} />
             <div className="flex items-center space-x-[10px]">
